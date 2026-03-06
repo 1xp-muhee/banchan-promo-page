@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>코반찬 | 집밥처럼 든든한 오늘의 반찬</title>
+  <meta name="description" content="매일 바뀌는 신선한 반찬, 국/찌개, 메인요리까지. 코반찬에서 오늘 식탁을 더 맛있게 준비하세요." />
+  <style>
+    :root{
+      --bg:#fffaf3;
+      --card:#ffffff;
+      --main:#d9891b;
+      --main-dark:#8a4d00;
+      --text:#2c2c2c;
+      --muted:#6b6b6b;
+      --line:#f1dfc4;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+    header{padding:18px 0;border-bottom:1px solid var(--line);background:#fffaf3cc;backdrop-filter: blur(4px);position:sticky;top:0}
+    .logo{font-weight:800;color:var(--main-dark);font-size:20px}
+    .hero{padding:60px 0 30px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    .badge{display:inline-block;background:#ffe6bf;color:#7a4200;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700}
+    h1{font-size:44px;line-height:1.2;margin:14px 0 10px}
+    .sub{font-size:18px;color:var(--muted);margin-bottom:24px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.main{background:var(--main);color:#fff}
+    .btn.line{border:1px solid var(--main);color:var(--main-dark);background:#fff}
+    .preview{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:0 8px 24px #00000010}
+    .preview img{width:100%;border-radius:10px;display:block}
+
+    section{padding:40px 0}
+    h2{font-size:30px;margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .item h3{margin:0 0 8px;font-size:18px}
+    .item p{margin:0;color:var(--muted)}
+
+    .point{background:#fff3df;border:1px solid #f6d19b;border-radius:14px;padding:18px}
+    .footer-cta{background:linear-gradient(135deg,#ffe2b3,#ffd18a);border-radius:16px;padding:26px;text-align:center}
+    footer{padding:24px 0 34px;color:#7d6b53;font-size:14px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;">
+      <div class="logo">코반찬</div>
+      <a class="btn line" href="#contact">주문 문의</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <span class="badge">매일 바뀌는 오늘의 반찬</span>
+        <h1>집밥의 정성, <br/>가게 퀄리티로 준비한 <span style="color:var(--main-dark)">코반찬</span></h1>
+        <p class="sub">메인요리부터 국/찌개, 밑반찬까지 한 번에. 바쁜 날에도 든든하고 맛있는 식탁을 준비하세요.</p>
+        <div class="cta">
+          <a class="btn main" href="#contact">지금 주문하기</a>
+          <a class="btn line" href="#menu">메뉴 보기</a>
+        </div>
+      </div>
+      <div class="preview">
+        <img src="assets/feed.png" alt="코반찬 인스타 피드 미리보기"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="point">
+        <strong>사진 분석 요약</strong><br/>
+        동일한 톤의 메뉴 카드(브랜딩 일관성), 실제 음식 클로즈업(신뢰도), 다수의 조회수(관심도)를 확인했습니다.
+        즉, <b>“눈에 익은 메뉴 + 집밥 감성 + 검증된 인기”</b>를 강조하면 전환율이 좋은 구조입니다.
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>이런 메뉴를 만나보세요</h2>
+      <div class="grid">
+        <article class="item"><h3>오늘의 메인요리</h3><p>매콤/달콤/담백 라인업으로 식탁의 중심 메뉴 준비</p></article>
+        <article class="item"><h3>국 & 찌개</h3><p>아이부터 어른까지 먹기 좋은 집밥 스타일 국물요리</p></article>
+        <article class="item"><h3>인기 밑반찬</h3><p>매일 먹어도 질리지 않는 기본 반찬 + 시즌 메뉴</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>코반찬이 사랑받는 이유</h2>
+      <div class="grid">
+        <article class="item"><h3>매일 업데이트</h3><p>매일 새로운 메뉴 구성으로 선택 폭 확대</p></article>
+        <article class="item"><h3>한눈에 보는 메뉴판</h3><p>직관적인 카드형 메뉴로 주문 결정 시간 단축</p></article>
+        <article class="item"><h3>가성비 있는 한 끼</h3><p>합리적 가격대로 반찬·메인·국물 조합 완성</p></article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="footer-cta">
+        <h2 style="margin-top:0">오늘 저녁, 코반찬으로 편하게 준비하세요</h2>
+        <p style="margin:8px 0 16px;color:#6f4b13">주문/픽업/배달 문의는 아래 채널로 연락 주세요.</p>
+        <p style="margin:0"><b>전화:</b> 010-0000-0000 &nbsp;|&nbsp; <b>인스타:</b> @kobanchan</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 코반찬. All rights reserved.</div>
+  </footer>
+</body>
+</html>
