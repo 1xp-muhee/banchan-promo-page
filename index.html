@@ -6,7 +6,7 @@
   <title>도쿄반찬 | 심플 메뉴 페이지</title>
   <meta name="description" content="도쿄반찬 - 도쿄에서 만나는 한국 반찬. 심플하게 메뉴와 특징을 확인하세요." />
   <style>
-    :root{--bg:#ffffff;--text:#111111;--muted:#666;--line:#eaeaea;--point:#111}
+    :root{--bg:#ffffff;--text:#111111;--muted:#666;--line:#eaeaea}
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR','Segoe UI',sans-serif;line-height:1.5}
     .wrap{max-width:860px;margin:0 auto;padding:0 18px}
@@ -18,6 +18,8 @@
     .sub{margin:0 0 22px;color:var(--muted)}
     .image{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:26px}
     .image img{width:100%;display:block}
+    .bgm{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 20px}
+    .bgm-title{font-size:13px;font-weight:700;margin-bottom:6px}
     h2{font-size:22px;margin:0 0 12px}
     .list{border-top:1px solid var(--line)}
     .item{padding:14px 0;border-bottom:1px solid var(--line)}
@@ -43,41 +45,26 @@
       <img src="assets/feed.png" alt="도쿄반찬 메뉴 이미지" />
     </div>
 
+    <div class="bgm">
+      <div class="bgm-title">🍽️ 식욕 돋우는 BGM (플레이 버튼 눌러주세요)</div>
+      <audio controls loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3f2b6e4f42.mp3?filename=summer-lounge-ambient-11068.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
     <h2>메뉴</h2>
     <div class="list">
-      <div class="item">
-        <div class="name">제육볶음</div>
-        <div class="meta">특징: 매콤한 감칠맛 메인요리 · 디자인: 붉은 톤 강조</div>
-      </div>
-      <div class="item">
-        <div class="name">소불고기</div>
-        <div class="meta">특징: 달짝지근한 인기 반찬 · 디자인: 따뜻한 브라운 톤</div>
-      </div>
-      <div class="item">
-        <div class="name">멸치볶음</div>
-        <div class="meta">특징: 고소한 기본 밑반찬 · 디자인: 재료 질감 클로즈업</div>
-      </div>
-      <div class="item">
-        <div class="name">오이무침</div>
-        <div class="meta">특징: 아삭하고 산뜻한 반찬 · 디자인: 그린 포인트</div>
-      </div>
-      <div class="item">
-        <div class="name">잡채</div>
-        <div class="meta">특징: 한 끼를 든든하게 채우는 메뉴 · 디자인: 면의 윤기 강조</div>
-      </div>
-      <div class="item">
-        <div class="name">김치찌개</div>
-        <div class="meta">특징: 식사 완성용 국물 메뉴 · 디자인: 따뜻한 그릇 중심 구도</div>
-      </div>
+      <div class="item"><div class="name">제육볶음</div><div class="meta">특징: 매콤한 감칠맛 메인요리 · 디자인: 붉은 톤 강조</div></div>
+      <div class="item"><div class="name">소불고기</div><div class="meta">특징: 달짝지근한 인기 반찬 · 디자인: 따뜻한 브라운 톤</div></div>
+      <div class="item"><div class="name">멸치볶음</div><div class="meta">특징: 고소한 기본 밑반찬 · 디자인: 재료 질감 클로즈업</div></div>
+      <div class="item"><div class="name">오이무침</div><div class="meta">특징: 아삭하고 산뜻한 반찬 · 디자인: 그린 포인트</div></div>
+      <div class="item"><div class="name">잡채</div><div class="meta">특징: 한 끼를 든든하게 채우는 메뉴 · 디자인: 면의 윤기 강조</div></div>
+      <div class="item"><div class="name">김치찌개</div><div class="meta">특징: 식사 완성용 국물 메뉴 · 디자인: 따뜻한 그릇 중심 구도</div></div>
     </div>
 
-    <div class="contact">
-      문의: Instagram @tokyo_banchan · Phone +81-00-0000-0000
-    </div>
+    <div class="contact">문의: Instagram @tokyo_banchan · Phone +81-00-0000-0000</div>
   </main>
 
-  <footer>
-    <div class="wrap">© 2026 도쿄반찬</div>
-  </footer>
+  <footer><div class="wrap">© 2026 도쿄반찬</div></footer>
 </body>
 </html>
