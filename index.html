@@ -2,68 +2,82 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>도쿄반찬 | 도쿄에서 만나는 한국 집반찬</title>
-  <meta name="description" content="도쿄에서 한국 반찬을 판매하는 도쿄반찬. 메인요리부터 국·찌개, 밑반찬까지 간결하게 고르고 맛있게 즐기세요." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>도쿄반찬 | 심플 메뉴 페이지</title>
+  <meta name="description" content="도쿄반찬 - 도쿄에서 만나는 한국 반찬. 심플하게 메뉴와 특징을 확인하세요." />
   <style>
-    :root{--bg:#fffaf3;--card:#fff;--main:#d78216;--deep:#7a4300;--text:#2d2d2d;--muted:#6d6d6d;--line:#efd9b7;}
-    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:"Pretendard","Noto Sans KR",sans-serif;line-height:1.55}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;background:#fffaf3e8;backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-    .top{height:68px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-size:22px;font-weight:900;color:var(--deep)}
-    .btn{padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block}
-    .btn.main{background:var(--main);color:white}.btn.line{border:1px solid var(--main);color:var(--deep);background:#fff}
-    .hero{padding:56px 0 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    h1{font-size:42px;line-height:1.2;margin:8px 0 12px}.sub{color:var(--muted);font-size:18px;margin:0 0 18px}
-    .badge{display:inline-block;background:#ffe4bc;color:#7a4300;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:800}
-    .preview{background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 8px 20px #0001}
-    .preview img{width:100%;display:block;border-radius:10px}
-    section{padding:30px 0} h2{margin:0 0 14px;font-size:30px}
-    .desc{color:var(--muted);margin:-2px 0 18px}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .card{border:1px solid var(--line);background:var(--card);padding:16px;border-radius:14px}
-    .card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
-    .tag{display:inline-block;font-size:12px;background:#fff1d8;color:#8a4f00;padding:4px 8px;border-radius:999px;margin-bottom:8px;font-weight:700}
-    .cta{background:linear-gradient(145deg,#ffe1af,#ffd18a);padding:24px;border-radius:16px;text-align:center}
-    footer{padding:20px 0 32px;color:#7f6d53;font-size:14px}
-    @media (max-width:920px){.hero{grid-template-columns:1fr}h1{font-size:34px}.grid{grid-template-columns:1fr}}
+    :root{--bg:#ffffff;--text:#111111;--muted:#666;--line:#eaeaea;--point:#111}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR','Segoe UI',sans-serif;line-height:1.5}
+    .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+    header{border-bottom:1px solid var(--line)}
+    .top{height:64px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
+    main{padding:34px 0 46px}
+    h1{font-size:30px;line-height:1.25;margin:0 0 10px;letter-spacing:-.02em}
+    .sub{margin:0 0 22px;color:var(--muted)}
+    .image{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:26px}
+    .image img{width:100%;display:block}
+    h2{font-size:22px;margin:0 0 12px}
+    .list{border-top:1px solid var(--line)}
+    .item{padding:14px 0;border-bottom:1px solid var(--line)}
+    .name{font-weight:700;margin-bottom:4px}
+    .meta{font-size:14px;color:var(--muted)}
+    .contact{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:16px 0 26px;color:#888;font-size:13px}
   </style>
 </head>
 <body>
-  <header><div class="wrap top"><div class="logo">도쿄반찬</div><a class="btn line" href="#contact">주문 문의</a></div></header>
+  <header>
+    <div class="wrap top">
+      <div class="logo">도쿄반찬</div>
+      <div style="font-size:13px;color:#777">TOKYO K-BANCHAN</div>
+    </div>
+  </header>
+
   <main class="wrap">
-    <section class="hero">
-      <div>
-        <span class="badge">TOKYO × KOREAN BANCHAN</span>
-        <h1>도쿄에서 즐기는<br>정갈한 한국 반찬 한 상</h1>
-        <p class="sub">매일 먹기 좋은 반찬과 메인요리를 <b>간결한 메뉴 카드</b>로 빠르게 고르고 주문하세요.</p>
-        <a class="btn main" href="#menu">메뉴 한눈에 보기</a>
-      </div>
-      <div class="preview"><img src="assets/feed.png" alt="도쿄반찬 메뉴 피드" /></div>
-    </section>
+    <h1>도쿄에서 만나는 한국 반찬</h1>
+    <p class="sub">복잡한 장식 없이, 메뉴와 특징만 간결하게 정리했습니다.</p>
 
-    <section id="menu">
-      <h2>메뉴별 특징 & 디자인</h2>
-      <p class="desc">피드 스타일에 맞춰 <b>짧고 명확한 설명</b>으로 정리했습니다.</p>
-      <div class="grid">
-        <article class="card"><span class="tag">매콤 메인</span><h3>제육볶음</h3><p>불향과 감칠맛이 강한 인기 메인. <b>레드 포인트</b> 썸네일로 매콤함을 직관적으로 전달.</p></article>
-        <article class="card"><span class="tag">국민 반찬</span><h3>소불고기</h3><p>달큰하고 부드러운 밥도둑 메뉴. <b>브라운 톤</b> 배경으로 따뜻한 집밥 무드 강조.</p></article>
-        <article class="card"><span class="tag">기본 밑반찬</span><h3>멸치볶음</h3><p>짭짤·고소한 기본 사이드. <b>클로즈업 컷</b>으로 윤기와 식감 포인트를 살림.</p></article>
-        <article class="card"><span class="tag">상큼 라인</span><h3>오이무침</h3><p>아삭하고 산뜻한 조합. <b>그린 컬러 강조</b>로 신선함과 가벼운 느낌 전달.</p></article>
-        <article class="card"><span class="tag">든든 라인</span><h3>잡채</h3><p>잔치 느낌의 스페셜 반찬. <b>면 텍스처</b>가 잘 보이게 상단 조명 컷 배치.</p></article>
-        <article class="card"><span class="tag">식사 완성</span><h3>김치찌개</h3><p>메인과 함께 주문되는 국물류. <b>뚝배기/볼 중심 구도</b>로 따뜻함과 푸짐함 표현.</p></article>
-      </div>
-    </section>
+    <div class="image">
+      <img src="assets/feed.png" alt="도쿄반찬 메뉴 이미지" />
+    </div>
 
-    <section>
-      <div class="cta" id="contact">
-        <h2 style="margin-top:0">도쿄반찬 주문 안내</h2>
-        <p style="margin:8px 0 14px;color:#6f4b13">도쿄 지역 한국 반찬 주문·픽업·문의 환영합니다.</p>
-        <p style="margin:0"><b>Instagram</b> @tokyo_banchan &nbsp;|&nbsp; <b>Phone</b> +81-00-0000-0000</p>
+    <h2>메뉴</h2>
+    <div class="list">
+      <div class="item">
+        <div class="name">제육볶음</div>
+        <div class="meta">특징: 매콤한 감칠맛 메인요리 · 디자인: 붉은 톤 강조</div>
       </div>
-    </section>
+      <div class="item">
+        <div class="name">소불고기</div>
+        <div class="meta">특징: 달짝지근한 인기 반찬 · 디자인: 따뜻한 브라운 톤</div>
+      </div>
+      <div class="item">
+        <div class="name">멸치볶음</div>
+        <div class="meta">특징: 고소한 기본 밑반찬 · 디자인: 재료 질감 클로즈업</div>
+      </div>
+      <div class="item">
+        <div class="name">오이무침</div>
+        <div class="meta">특징: 아삭하고 산뜻한 반찬 · 디자인: 그린 포인트</div>
+      </div>
+      <div class="item">
+        <div class="name">잡채</div>
+        <div class="meta">특징: 한 끼를 든든하게 채우는 메뉴 · 디자인: 면의 윤기 강조</div>
+      </div>
+      <div class="item">
+        <div class="name">김치찌개</div>
+        <div class="meta">특징: 식사 완성용 국물 메뉴 · 디자인: 따뜻한 그릇 중심 구도</div>
+      </div>
+    </div>
+
+    <div class="contact">
+      문의: Instagram @tokyo_banchan · Phone +81-00-0000-0000
+    </div>
   </main>
-  <footer><div class="wrap">© 2026 도쿄반찬. All rights reserved.</div></footer>
+
+  <footer>
+    <div class="wrap">© 2026 도쿄반찬</div>
+  </footer>
 </body>
 </html>
