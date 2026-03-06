@@ -3,68 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>도쿄반찬 | 심플 메뉴 페이지</title>
-  <meta name="description" content="도쿄반찬 - 도쿄에서 만나는 한국 반찬. 심플하게 메뉴와 특징을 확인하세요." />
+  <title>도쿄반찬 | 사진 속 반찬 모음</title>
   <style>
-    :root{--bg:#ffffff;--text:#111111;--muted:#666;--line:#eaeaea}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR','Segoe UI',sans-serif;line-height:1.5}
-    .wrap{max-width:860px;margin:0 auto;padding:0 18px}
-    header{border-bottom:1px solid var(--line)}
-    .top{height:64px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
-    main{padding:34px 0 46px}
-    h1{font-size:30px;line-height:1.25;margin:0 0 10px;letter-spacing:-.02em}
-    .sub{margin:0 0 22px;color:var(--muted)}
-    .image{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:26px}
-    .image img{width:100%;display:block}
-    .bgm{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 20px}
-    .bgm-title{font-size:13px;font-weight:700;margin-bottom:6px}
-    h2{font-size:22px;margin:0 0 12px}
-    .list{border-top:1px solid var(--line)}
-    .item{padding:14px 0;border-bottom:1px solid var(--line)}
-    .name{font-weight:700;margin-bottom:4px}
-    .meta{font-size:14px;color:var(--muted)}
-    .contact{margin-top:26px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
-    footer{border-top:1px solid var(--line);padding:16px 0 26px;color:#888;font-size:13px}
+    :root{--line:#eaeaea;--text:#111;--muted:#666}
+    *{box-sizing:border-box} body{margin:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif}
+    .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+    header{border-bottom:1px solid var(--line)} .top{height:62px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800}
+    main{padding:28px 0 40px}
+    h1{margin:0 0 8px;font-size:30px} .sub{margin:0 0 18px;color:var(--muted)}
+    .bgm{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .card{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+    .card img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
+    .meta{padding:9px 10px;font-size:13px;color:#444}
+    footer{border-top:1px solid var(--line);padding:14px 0 24px;color:#888;font-size:12px}
+    @media (max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap top">
-      <div class="logo">도쿄반찬</div>
-      <div style="font-size:13px;color:#777">TOKYO K-BANCHAN</div>
-    </div>
-  </header>
+<header><div class="wrap top"><div class="logo">도쿄반찬</div><div style="font-size:12px;color:#777">사진 기반 메뉴</div></div></header>
+<main class="wrap">
+  <h1>스크린샷 속 반찬 하나씩 보기</h1>
+  <p class="sub">요청대로 원본 피드를 그대로 쓰지 않고, 사진 속 반찬들을 개별 메뉴 형태로 분리해 구성했습니다.</p>
 
-  <main class="wrap">
-    <h1>도쿄에서 만나는 한국 반찬</h1>
-    <p class="sub">복잡한 장식 없이, 메뉴와 특징만 간결하게 정리했습니다.</p>
+  <div class="bgm">
+    🍽️ 식욕 돋우는 BGM
+    <div><audio controls loop><source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3f2b6e4f42.mp3?filename=summer-lounge-ambient-11068.mp3" type="audio/mpeg"></audio></div>
+  </div>
 
-    <div class="image">
-      <img src="assets/feed.png" alt="도쿄반찬 메뉴 이미지" />
-    </div>
-
-    <div class="bgm">
-      <div class="bgm-title">🍽️ 식욕 돋우는 BGM (플레이 버튼 눌러주세요)</div>
-      <audio controls loop>
-        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3f2b6e4f42.mp3?filename=summer-lounge-ambient-11068.mp3" type="audio/mpeg" />
-      </audio>
-    </div>
-
-    <h2>메뉴</h2>
-    <div class="list">
-      <div class="item"><div class="name">제육볶음</div><div class="meta">특징: 매콤한 감칠맛 메인요리 · 디자인: 붉은 톤 강조</div></div>
-      <div class="item"><div class="name">소불고기</div><div class="meta">특징: 달짝지근한 인기 반찬 · 디자인: 따뜻한 브라운 톤</div></div>
-      <div class="item"><div class="name">멸치볶음</div><div class="meta">특징: 고소한 기본 밑반찬 · 디자인: 재료 질감 클로즈업</div></div>
-      <div class="item"><div class="name">오이무침</div><div class="meta">특징: 아삭하고 산뜻한 반찬 · 디자인: 그린 포인트</div></div>
-      <div class="item"><div class="name">잡채</div><div class="meta">특징: 한 끼를 든든하게 채우는 메뉴 · 디자인: 면의 윤기 강조</div></div>
-      <div class="item"><div class="name">김치찌개</div><div class="meta">특징: 식사 완성용 국물 메뉴 · 디자인: 따뜻한 그릇 중심 구도</div></div>
-    </div>
-
-    <div class="contact">문의: Instagram @tokyo_banchan · Phone +81-00-0000-0000</div>
-  </main>
-
-  <footer><div class="wrap">© 2026 도쿄반찬</div></footer>
+  <section class="grid">
+    <article class="card"><img src="assets/items/item-1.jpg" alt="반찬 1"><div class="meta">반찬 01</div></article>
+    <article class="card"><img src="assets/items/item-2.jpg" alt="반찬 2"><div class="meta">반찬 02</div></article>
+    <article class="card"><img src="assets/items/item-3.jpg" alt="반찬 3"><div class="meta">반찬 03</div></article>
+    <article class="card"><img src="assets/items/item-4.jpg" alt="반찬 4"><div class="meta">반찬 04</div></article>
+    <article class="card"><img src="assets/items/item-5.jpg" alt="반찬 5"><div class="meta">반찬 05</div></article>
+    <article class="card"><img src="assets/items/item-6.jpg" alt="반찬 6"><div class="meta">반찬 06</div></article>
+    <article class="card"><img src="assets/items/item-7.jpg" alt="반찬 7"><div class="meta">반찬 07</div></article>
+    <article class="card"><img src="assets/items/item-8.jpg" alt="반찬 8"><div class="meta">반찬 08</div></article>
+    <article class="card"><img src="assets/items/item-9.jpg" alt="반찬 9"><div class="meta">반찬 09</div></article>
+    <article class="card"><img src="assets/items/item-10.jpg" alt="반찬 10"><div class="meta">반찬 10</div></article>
+    <article class="card"><img src="assets/items/item-11.jpg" alt="반찬 11"><div class="meta">반찬 11</div></article>
+    <article class="card"><img src="assets/items/item-12.jpg" alt="반찬 12"><div class="meta">반찬 12</div></article>
+    <article class="card"><img src="assets/items/item-13.jpg" alt="반찬 13"><div class="meta">반찬 13</div></article>
+    <article class="card"><img src="assets/items/item-14.jpg" alt="반찬 14"><div class="meta">반찬 14</div></article>
+    <article class="card"><img src="assets/items/item-15.jpg" alt="반찬 15"><div class="meta">반찬 15</div></article>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 도쿄반찬</div></footer>
 </body>
 </html>
